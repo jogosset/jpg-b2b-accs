@@ -35,7 +35,7 @@
         { "component": "text", "name": "ctaLabel", "label": "CTA Label", "valueType": "string", "value": "" },
         { "component": "text", "name": "ctaUrl", "label": "CTA URL", "valueType": "string", "value": "" },
         { "component": "text", "name": "text-color", "label": "Text Color (e.g. #ffffff or white)", "valueType": "string", "value": "" },
-        { "component": "number", "name": "cta-button-opacity", "label": "CTA Button Opacity % (0–100, default 24)", "valueType": "number", "value": 24, "min": 0, "max": 100 }
+        { "component": "text", "name": "cta-button-opacity", "label": "CTA Button Opacity % (0-100, default 24)", "valueType": "string", "value": "" }
       ]
     }
   ],
