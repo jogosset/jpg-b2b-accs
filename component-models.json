@@ -1682,13 +1682,11 @@
         "value": ""
       },
       {
-        "component": "number",
+        "component": "text",
         "name": "cta-button-opacity",
         "label": "CTA Button Opacity % (0\u2013100, default 24)",
-        "valueType": "number",
-        "value": 24,
-        "min": 0,
-        "max": 100
+        "valueType": "string",
+        "value": ""
       }
     ]
   }
