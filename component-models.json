@@ -1473,6 +1473,13 @@
         "label": "CTA URL",
         "valueType": "string",
         "value": ""
+      },
+      {
+        "component": "text",
+        "name": "text-color",
+        "label": "Text Color (e.g. #ffffff or white)",
+        "valueType": "string",
+        "value": ""
       }
     ]
   },
