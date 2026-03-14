@@ -85,6 +85,17 @@ function buildAutoBlocks(main) {
 }
 
 /**
+ * Applies background colors from section-metadata to section elements.
+ * @param {Element} main The main element
+ */
+function applySectionColors(main) {
+  main.querySelectorAll('.section[data-background-color]').forEach((section) => {
+    const color = section.dataset.backgroundColor;
+    if (color) section.style.backgroundColor = color;
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -94,6 +105,7 @@ export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
+  applySectionColors(main);
   decorateBlocks(main);
 }
 
@@ -180,3 +192,4 @@ loadPage();
   // eslint-disable-next-line import/no-unresolved
   import('https://da.live/scripts/dapreview.js').then(({ default: daPreview }) => daPreview(loadPage));
 }());
+
