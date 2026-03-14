@@ -160,6 +160,13 @@
             "value": "xxhuge"
           }
         ]
+      },
+      {
+        "component": "text",
+        "name": "background-color",
+        "label": "Background Color (e.g. #ffffff or red)",
+        "valueType": "string",
+        "value": ""
       }
     ]
   },
