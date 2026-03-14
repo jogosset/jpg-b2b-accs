@@ -27,9 +27,13 @@ export default function decorate(block) {
     block.style.setProperty('--hero-v3-cta-opacity', `${opacity}%`);
   }
 
+  const contentCell = block.querySelector('div:nth-child(1)>div:nth-child(1)');
+  if (!contentCell) return;
+
   const heromain = document.createElement('div');
   heromain.className = 'hero-v3-main';
-  [...block.querySelector('div:nth-child(1)>div:nth-child(1)').children].forEach((row) => {
+
+  [...contentCell.children].forEach((row) => {
     const herocontent = document.createElement('div');
     herocontent.className = 'hero-v3-content';
 
