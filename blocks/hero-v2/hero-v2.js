@@ -1,6 +1,19 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
 export default function decorate(block) {
+  // Read optional text-color config from second row (key-value config row)
+  const configRow = block.querySelector(':scope > div:nth-child(2)');
+  if (configRow) {
+    const cells = [...configRow.querySelectorAll(':scope > div')];
+    if (cells.length >= 2 && cells[0].textContent.trim().toLowerCase() === 'text-color') {
+      const textColor = cells[1].textContent.trim();
+      if (textColor) {
+        block.style.setProperty('--hero-v2-text-color', textColor);
+      }
+    }
+    configRow.remove();
+  }
+
   const heromain = document.createElement('div');
   heromain.className = 'hero-v2-main';
   [...block.querySelector('div:nth-child(1)>div:nth-child(1)').children].forEach((row) => {
