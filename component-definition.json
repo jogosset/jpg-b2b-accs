@@ -849,6 +849,16 @@
               "type": "key-value-block"
             }
           }
+        },
+        {
+          "title": "Product Teaser V2",
+          "id": "product-teaser-v2",
+          "model": "product-teaser-v2",
+          "plugins": {
+            "da": {
+              "type": "key-value-block"
+            }
+          }
         }
       ]
     }
