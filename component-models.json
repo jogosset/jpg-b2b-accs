@@ -1797,5 +1797,24 @@
         "value": "By entering this site you agree to our Terms of Use and Privacy Policy."
       }
     ]
+  },
+  {
+    "id": "account-dashboard",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Dashboard Title",
+        "valueType": "string",
+        "value": "My Account Dashboard"
+      },
+      {
+        "component": "text",
+        "name": "recent-orders-count",
+        "label": "Recent Orders / POs to Display (default: 5)",
+        "valueType": "string",
+        "value": "5"
+      }
+    ]
   }
 ]
