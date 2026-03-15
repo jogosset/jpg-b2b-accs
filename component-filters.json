@@ -11,6 +11,7 @@
       "hero",
       "accordion",
       "cards",
+      "cards-v2",
       "carousel",
       "columns",
       "commerce-account-header",
@@ -75,6 +76,12 @@
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "cards-v2",
+    "components": [
+      "card-v2"
     ]
   },
   {
