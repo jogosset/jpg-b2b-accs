@@ -150,7 +150,7 @@ body {
   letter-spacing: var(--type-body-1-default-letter-spacing);
   margin: 0;
   color: var(--color-neutral-800);
-  background-color: var(--background-color);
+  background-color: #B9C1BC;
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
