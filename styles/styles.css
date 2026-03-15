@@ -405,7 +405,7 @@ main > .section:first-of-type {
 /* section metadata - styles - start */
 main .section.light,
 main .section.highlight {
-  background-color: #000000;
+  background-color: #B9C1BC;
   margin: 0;
   padding: var(--spacing-xbig) 0;
 }
