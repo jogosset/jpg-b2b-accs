@@ -852,6 +852,16 @@
               ]
             }
           }
+        },
+        {
+          "title": "Age Gate",
+          "id": "age-gate",
+          "model": "age-gate",
+          "plugins": {
+            "da": {
+              "type": "key-value-block"
+            }
+          }
         }
       ]
     },
