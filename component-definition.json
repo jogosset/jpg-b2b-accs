@@ -862,6 +862,16 @@
               "type": "key-value-block"
             }
           }
+        },
+        {
+          "title": "Age Gate V2",
+          "id": "age-gate-v2",
+          "model": "age-gate-v2",
+          "plugins": {
+            "da": {
+              "type": "key-value-block"
+            }
+          }
         }
       ]
     },
