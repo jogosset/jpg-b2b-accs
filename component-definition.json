@@ -872,6 +872,16 @@
               "type": "key-value-block"
             }
           }
+        },
+        {
+          "title": "Account Dashboard",
+          "id": "account-dashboard",
+          "model": "account-dashboard",
+          "plugins": {
+            "da": {
+              "type": "key-value-block"
+            }
+          }
         }
       ]
     },
