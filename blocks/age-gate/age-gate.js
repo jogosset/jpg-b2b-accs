@@ -2,14 +2,14 @@ import { readBlockConfig } from '../../scripts/aem.js';
 
 const SESSION_KEY = 'age-gate-verified';
 
-function isOver21(birthDate) {
+function calculateAge(birthDate) {
   const today = new Date();
   let age = today.getFullYear() - birthDate.getFullYear();
   const monthDiff = today.getMonth() - birthDate.getMonth();
   if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
     age -= 1;
   }
-  return age >= 21;
+  return age;
 }
 
 function parseDateInput(value) {
@@ -35,10 +35,11 @@ function dismiss(overlay) {
 export default function decorate(block) {
   const config = readBlockConfig(block);
 
+  const minAge = Math.max(1, parseInt(config['minimum-age'], 10) || 21);
   const heading = config.heading || 'Are you of legal drinking age?';
-  const subheading = config.subheading || 'You must be 21 years or older to enter this site.';
+  const subheading = config.subheading || `You must be ${minAge} years or older to enter this site.`;
   const buttonText = config['button-text'] || 'Enter Site';
-  const underageMessage = config['underage-message'] || 'Sorry, you must be 21 or older to enter this site.';
+  const underageMessage = config['underage-message'] || `Sorry, you must be ${minAge} or older to enter this site.`;
   const legalText = config['legal-text'] || 'By entering this site you are agreeing to our Terms of Use and Privacy Policy.';
 
   // Already verified this session — remove block and do nothing
@@ -107,7 +108,7 @@ export default function decorate(block) {
       return;
     }
 
-    if (isOver21(birthDate)) {
+    if (calculateAge(birthDate) >= minAge) {
       sessionStorage.setItem(SESSION_KEY, 'true');
       dismiss(overlay);
       block.closest('.section')?.remove();
