@@ -218,6 +218,39 @@
     ]
   },
   {
+    "id": "card-v2",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "body",
+        "label": "Body Text",
+        "valueType": "string",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "name": "background-color",
+        "label": "Card Background Color (e.g. #ffffff or white)",
+        "valueType": "string",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "name": "text-color",
+        "label": "Card Text Color (e.g. #000000 or black)",
+        "valueType": "string",
+        "value": ""
+      }
+    ]
+  },
+  {
     "id": "carousel-item",
     "fields": [
       {
