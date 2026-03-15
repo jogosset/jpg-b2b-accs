@@ -1702,6 +1702,13 @@
     "fields": [
       {
         "component": "text",
+        "name": "minimum-age",
+        "label": "Minimum Age Required",
+        "valueType": "string",
+        "value": "21"
+      },
+      {
+        "component": "text",
         "name": "heading",
         "label": "Heading",
         "valueType": "string",
@@ -1712,7 +1719,7 @@
         "name": "subheading",
         "label": "Subheading",
         "valueType": "string",
-        "value": "You must be 21 years or older to enter this site."
+        "value": ""
       },
       {
         "component": "text",
@@ -1726,7 +1733,7 @@
         "name": "underage-message",
         "label": "Underage Message",
         "valueType": "string",
-        "value": "Sorry, you must be 21 or older to enter this site."
+        "value": ""
       },
       {
         "component": "text",
