@@ -1696,5 +1696,45 @@
         "value": ""
       }
     ]
+  },
+  {
+    "id": "age-gate",
+    "fields": [
+      {
+        "component": "text",
+        "name": "heading",
+        "label": "Heading",
+        "valueType": "string",
+        "value": "Are you of legal drinking age?"
+      },
+      {
+        "component": "text",
+        "name": "subheading",
+        "label": "Subheading",
+        "valueType": "string",
+        "value": "You must be 21 years or older to enter this site."
+      },
+      {
+        "component": "text",
+        "name": "button-text",
+        "label": "Button Text",
+        "valueType": "string",
+        "value": "Enter Site"
+      },
+      {
+        "component": "text",
+        "name": "underage-message",
+        "label": "Underage Message",
+        "valueType": "string",
+        "value": "Sorry, you must be 21 or older to enter this site."
+      },
+      {
+        "component": "text",
+        "name": "legal-text",
+        "label": "Legal Text",
+        "valueType": "string",
+        "value": "By entering this site you are agreeing to our Terms of Use and Privacy Policy."
+      }
+    ]
   }
 ]
