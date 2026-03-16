@@ -101,7 +101,7 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2,
+              "columns": 4,
               "fields": [
                 {
                   "name": "image",
@@ -114,6 +114,14 @@
                 {
                   "name": "text",
                   "selector": "div:nth-child(2)"
+                },
+                {
+                  "name": "background-color",
+                  "selector": "div:nth-child(3)"
+                },
+                {
+                  "name": "text-color",
+                  "selector": "div:nth-child(4)"
                 }
               ]
             }

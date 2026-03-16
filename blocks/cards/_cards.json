@@ -19,11 +19,13 @@
       "plugins": {
         "da": {
           "rows": 1,
-          "columns": 2,
+          "columns": 4,
           "fields": [
             { "name": "image", "selector": "div:nth-child(1)>picture>img[src]" },
             { "name": "imageAlt", "selector": "div:nth-child(1)>picture>img[alt]" },
-            { "name": "text", "selector": "div:nth-child(2)" }
+            { "name": "text", "selector": "div:nth-child(2)" },
+            { "name": "background-color", "selector": "div:nth-child(3)" },
+            { "name": "text-color", "selector": "div:nth-child(4)" }
           ]
         }
       }
@@ -53,6 +55,20 @@
           "value": "",
           "label": "Text",
           "valueType": "string"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "background-color",
+          "label": "Background Color (e.g. #ffffff or white)",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "text-color",
+          "label": "Text Color (e.g. #000000 or black)",
+          "value": ""
         }
       ]
     }

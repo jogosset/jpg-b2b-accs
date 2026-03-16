@@ -214,6 +214,20 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "background-color",
+        "label": "Background Color (e.g. #ffffff or white)",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text-color",
+        "label": "Text Color (e.g. #000000 or black)",
+        "value": ""
       }
     ]
   },
