@@ -11,8 +11,6 @@
       "hero",
       "accordion",
       "cards",
-      "cards-v2",
-      "cards-v3",
       "carousel",
       "columns",
       "commerce-account-header",
@@ -45,27 +43,7 @@
       "product-list-page",
       "product-recommendations",
       "targeted-block",
-      "text",
-      "blog-tiles",
-      "blog-post",
-      "circle-carousel",
-      "hero-cta",
-      "newsletter",
-      "promotional-hero",
-      "promotional-hero-v2",
-      "search-bar",
-      "store-locator",
-      "top-banner",
-      "hero-v2",
-      "hero-v3",
-      "product-teaser",
-      "product-teaser-v2",
-      "quote",
-      "tabs",
-      "video",
-      "age-gate",
-      "age-gate-v2",
-      "account-dashboard"
+      "text"
     ]
   },
   {
@@ -78,18 +56,6 @@
     "id": "cards",
     "components": [
       "card"
-    ]
-  },
-  {
-    "id": "cards-v2",
-    "components": [
-      "card-v2"
-    ]
-  },
-  {
-    "id": "cards-v3",
-    "components": [
-      "card-v3"
     ]
   },
   {
@@ -113,28 +79,6 @@
     "components": [
       "text",
       "image"
-    ]
-  },
-  {
-    "id": "circle-carousel",
-    "components": [
-      "circle-carousel-item"
-    ]
-  },
-  {
-    "id": "search-bar",
-    "components": []
-  },
-  {
-    "id": "store-locator",
-    "components": [
-      "store-locator-item"
-    ]
-  },
-  {
-    "id": "tabs",
-    "components": [
-      "tabs-item"
     ]
   }
 ]
