@@ -1,0 +1,111 @@
+{
+  "definitions": [
+    {
+      "title": "Cards V3",
+      "id": "cards-v3",
+      "filter": "cards-v3",
+      "plugins": {
+        "da": {
+          "title": "Cards V3",
+          "rows": 1,
+          "columns": 5
+        }
+      }
+    },
+    {
+      "title": "Card V3",
+      "id": "card-v3",
+      "model": "card-v3",
+      "plugins": {
+        "da": {
+          "title": "Card V3",
+          "rows": 1,
+          "columns": 5,
+          "fields": [
+            {
+              "name": "image",
+              "selector": "div:nth-child(1)>picture>img[src]"
+            },
+            {
+              "name": "imageAlt",
+              "selector": "div:nth-child(1)>picture>img[alt]"
+            },
+            {
+              "name": "title",
+              "selector": "div:nth-child(2)"
+            },
+            {
+              "name": "body",
+              "selector": "div:nth-child(3)"
+            },
+            {
+              "name": "background-color",
+              "selector": "div:nth-child(4)"
+            },
+            {
+              "name": "text-color",
+              "selector": "div:nth-child(5)"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "card-v3",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Image Alt Text",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "title",
+          "label": "Title",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "body",
+          "label": "Body Text",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "background-color",
+          "label": "Card Background Color (e.g. #1a73e8 or blue)",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "text-color",
+          "label": "Card Text Color (e.g. #ffffff or white)",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "cards-v3",
+      "components": [
+        "card-v3"
+      ]
+    }
+  ]
+}
