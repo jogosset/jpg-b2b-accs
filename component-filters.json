@@ -12,6 +12,7 @@
       "accordion",
       "cards",
       "cards-v2",
+      "cards-v3",
       "carousel",
       "columns",
       "commerce-account-header",
@@ -82,6 +83,12 @@
     "id": "cards-v2",
     "components": [
       "card-v2"
+    ]
+  },
+  {
+    "id": "cards-v3",
+    "components": [
+      "card-v3"
     ]
   },
   {
