@@ -1,63 +1,41 @@
 # Cards V2
 
-A flexible card grid block with per-card configurable background color and text color. Each card supports a title and rich body text. Cards are arranged in a responsive auto-fill grid.
+A flexible card grid block with per-card title, body text, background color, and text color controls.
 
-## How It Works
+## Features
 
-The **Cards V2** block is a container that holds one or more **Card V2** items. Each Card V2 item has four fields — title, body text, background color, and text color — editable via the DA.live properties panel.
+- **Title** — Displayed as a bold heading (`<h3>`) on each card
+- **Body text** — Supports rich text (paragraphs, lists, links)
+- **Background color** — Per-card background color (any valid CSS value)
+- **Text color** — Per-card text color (any valid CSS value)
 
-The colors are applied as CSS custom properties (`--cv2-bg` and `--cv2-text`) directly on each card element, so every text element inside the card automatically inherits the configured color.
+## Authoring in da.live
 
-## Fields (per Card V2 item)
+1. Add a **Cards V2** block to your page section
+2. Each row in the block table represents one card with 4 columns:
 
-| Field | Description | Default |
-|---|---|---|
-| `title` | Card headline | *(empty)* |
-| `body` | Card body text — supports rich formatting (bold, italic, links, lists) | *(empty)* |
-| `background-color` | Card background — any CSS color (`#1a2b3c`, `white`, `rgb(...)`) | Site `--color-neutral-100` |
-| `text-color` | Card text color — any CSS color | Site `--text-color` |
+| Column | Field | Example |
+|--------|-------|---------|
+| 1 | Title | `Our Services` |
+| 2 | Body text | Rich text — paragraphs, lists, links |
+| 3 | Background color | `#1a73e8` or `rgb(26,115,232)` or `blue` |
+| 4 | Text color | `#ffffff` or `white` |
 
-## Authoring in DA.live
+3. Add as many rows as you need — the grid auto-fills based on available width
 
-1. Insert a **Cards V2** block from the block picker (Blocks group).
-2. Inside the Cards V2 block, insert one or more **Card V2** items using the block picker.
-3. Click a Card V2 item to open the properties panel.
-4. Fill in:
-   - **Title** — the card headline
-   - **Body Text** — the card description (supports rich text formatting)
-   - **Card Background Color** — e.g. `#1a2b3c`, `#f0f4ff`, `white`
-   - **Card Text Color** — e.g. `#ffffff`, `#111111`, `black`
-5. Leave Background Color and Text Color blank to use the site defaults.
+## Example Table Structure
 
-## Card Grid Layout
-
-Cards use CSS `auto-fill` with a minimum width of `280px`, so the number of columns adapts to the available width automatically:
-
-| Viewport | Columns |
-|---|---|
-| > 900px | 3–4 (auto) |
-| 480–900px | 2 (auto) |
-| < 480px | 1 |
-
-## Customising Defaults
-
-The default card appearance (when no colors are set) is controlled by CSS custom properties in `cards-v2.css`:
-
-```css
-.cards-v2-card {
-  background-color: var(--cv2-bg, var(--color-neutral-100, #f5f5f5));
-  color: var(--cv2-text, var(--text-color, #111));
-}
+```
+| Cards V2       |                                        |         |         |
+|----------------|----------------------------------------|---------|---------|
+| Card Title     | Body text describing the card content  | #1a73e8 | #ffffff |
+| Another Card   | More descriptive body text here        | #f5f5f5 | #333333 |
+| Third Card     | Supporting text for the third card     | #000000 | #ffffff |
 ```
 
-To change the default background or text color site-wide, update `--color-neutral-100` or `--text-color` in `styles/styles.css`.
+## Notes
 
-## Differences from Cards V1
-
-| Feature | Cards | Cards V2 |
-|---|---|---|
-| Image support | Yes | No |
-| Title field | In body richtext | Dedicated field |
-| Body text | Richtext in column 2 | Dedicated richtext field |
-| Per-card background color | No | Yes |
-| Per-card text color | No | Yes |
+- If no background color is provided, cards default to a neutral light gray (`#f5f5f5`)
+- If no text color is provided, cards inherit the page default text color
+- Colors apply to the entire card including both title and body text
+- The card grid uses `auto-fill` with a minimum card width of 280px
