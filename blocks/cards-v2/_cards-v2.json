@@ -3,7 +3,6 @@
     {
       "title": "Cards V2",
       "id": "cards-v2",
-      "model": "cards-v2",
       "filter": "cards-v2",
       "plugins": {
         "da": {
@@ -44,21 +43,21 @@
         {
           "component": "richtext",
           "name": "body",
-          "label": "Body Text",
+          "label": "Body / Subtitle Text",
           "valueType": "string",
           "value": ""
         },
         {
           "component": "text",
           "name": "background-color",
-          "label": "Card Background Color (e.g. #ffffff or white)",
+          "label": "Background Color (e.g. #ffffff or white)",
           "valueType": "string",
           "value": ""
         },
         {
           "component": "text",
           "name": "text-color",
-          "label": "Card Text Color (e.g. #000000 or black)",
+          "label": "Text Color (e.g. #000000 or black)",
           "valueType": "string",
           "value": ""
         }
