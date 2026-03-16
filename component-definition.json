@@ -159,6 +159,54 @@
           }
         },
         {
+          "title": "Cards V3",
+          "id": "cards-v3",
+          "filter": "cards-v3",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 5
+            }
+          }
+        },
+        {
+          "title": "Card V3",
+          "id": "card-v3",
+          "model": "card-v3",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 5,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1)>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1)>picture>img[alt]"
+                },
+                {
+                  "name": "title",
+                  "selector": "div:nth-child(2)"
+                },
+                {
+                  "name": "body",
+                  "selector": "div:nth-child(3)"
+                },
+                {
+                  "name": "background-color",
+                  "selector": "div:nth-child(4)"
+                },
+                {
+                  "name": "text-color",
+                  "selector": "div:nth-child(5)"
+                }
+              ]
+            }
+          }
+        },
+        {
           "title": "Carousel",
           "id": "carousel",
           "model": "carousel",
